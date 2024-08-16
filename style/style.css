@@ -40,7 +40,7 @@
 .title{
     text-align: center;
     padding: 50px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #13033b;
     text-transform: uppercase;
 }
@@ -97,6 +97,7 @@ nav div{
     position: fixed;
     top: 30px;
     right: 60px;
+    z-index: 99;
 }
 /* latest products css start */
 #latest-container{
@@ -115,6 +116,9 @@ nav div{
     height: 250px;
     width: 200px;
     max-width: 100%;
+}
+#latest-container h2{
+    font-size: 2.5rem;
 }
 .card{
     background-color: #e79d444b;
@@ -212,9 +216,272 @@ nav div{
 #about-btn:hover{
     color:rgb(226, 134, 59);
     background-color: #fff;
-
 }
 /* about us section css end */
+/* offers section css start  */
+#offers {
+    padding: 20px;
+    gap: 30px;
+}
+#offers-left , #offers-card-2-parent , #offers-card-2-parent{
+    position: relative;
+}
+#offers-card-1{
+
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+#offers-card-1 h2{
+    color: #fff;
+    font-size: 3.5rem;
+    padding-bottom: 30px;
+}
+#offers-card-2 h2, #offers-card-3 h2{
+    color: #fff;
+    font-size: 2rem;
+    padding-bottom: 30px;
+}
+#offers-card-1 a , #offers-card-2 a, #offers-card-3 a{
+    border-radius: 0;
+    font-weight: 700;
+}
+#offers-card-2 {
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+    text-align: right;
+}
+#offers-card-3 {
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    text-align: left;
+}
+#offers-left img{
+    max-width: 100%;
+    height: 500px;
+}
+#offers-right {
+    flex-direction: column;
+    gap: 30px;
+}
+#offers-right img{
+    max-width: 100%;
+    height: 233px;
+}
+/* blog section start */
+#latest-blog-main{
+    padding: 20px 120px;
+    padding-top: 0;
+    gap: 30px;
+}
+#latest-blog-main img{
+    max-width: 100%;
+}
+.blogs{
+    background-color: #5f5d5d31;
+}
+.blog-image-container{
+    position: relative;
+}
+.blog-date{
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    border: 5px solid #fff;
+    color: #fff;
+    padding-top: 10px;
+    text-align: center;
+    position: absolute;
+    bottom:-5%;
+    left: 5%;
+}
+.blog-content{
+    padding: 25px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.blog-content h3{
+    font-size: 1.5rem;
+    padding: 10px 0; 
+}
+.blog-content p{
+    line-height: 25px;
+    padding: 10px 0; 
+    padding-bottom: 20px;
+}
+.blog-btn{
+    text-decoration: none;
+    color:#000;
+    font-weight: 400;
+    font-size: 1.25rem;
+    padding: 10px 50px;
+    background-color: transparent;
+    border: 1px solid #000;
+    transition: 0.3s ease-in;
+}
+.blog-btn:hover{
+    color: #fff;
+    background-color: #000;
+}
+/* offers section css end */
+/* Testimonial  css start  */
+#testimonial-container{
+    padding: 50px 250px ;
+}
+.testimonial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid;
+    border-radius: 40px;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+.client-image-container{
+    border: 8px solid #a3a3a3;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.client-image-container img{ 
+    max-width: 100%;
+    border-radius: 50%;
+}
+.client-name{
+    font-size: 2rem;
+    color: #d1793e;
+    text-align: center;
+    padding: 20px 0;
+    padding-top: 0;
+}
+.client-quoete{
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.client-quoete p{
+    line-height: 25px;
+    font-size: 1.25rem;
+}
+.client-quoete p:nth-child(3){
+    padding-top: 20px;
+}
+#testimonial-arrow{
+    text-align: center;
+    margin-top: 40px;
+}
+#testimonial-arrow a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #d1793e;
+    color: #fff;
+}
+#testimonial-arrow a:hover{
+    background-color: #000;
+}
+/* Testimonial  css end*/
+/* footer section css start  */
+footer{
+    padding: 50px 120px ;
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 0;
+}
+#input-icon-container{
+    justify-content: center;
+
+}
+#input input{
+    width: 600px;
+    padding: 15px 10px;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+}
+#input input::placeholder{
+    font-size: 1rem;
+}
+#input button{
+    padding: 14.5px 20px;
+    font-size: 1rem;
+    border: 1px solid #d1793e ;
+    background-color: #d1793e;
+    color: #fff;
+    transition: .3s ease-in;
+}
+#input button:hover{
+    background-color: transparent;
+    color: #d1793e ;
+}
+#icon{
+    margin: 0px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#icon a{
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.25rem;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+    transition: .3s ease-in;
+    width: 50px;
+    text-align: center;
+}
+#icon a:hover{
+    color: #cf590a ;
+    border: 1px solid #d1793e ;
+}
+#footer-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    padding: 50px 0;
+}
+#instagram img{
+    max-width: 100%;
+    height: 60px;
+    display: block;
+    margin: auto;
+}
+#input{
+    display: flex;
+}
+footer ul li {
+    list-style: none;
+    padding: 10px 0;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
+.ins-img{
+    width: 100px;
+    height: 80px;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.footer-title{
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+    text-align: left;
+}
 @media screen and (max-width:576px){
     #header-content{
         width: 100%;
@@ -229,7 +496,8 @@ nav div{
         height: 200px;
         width: 50%;
     }
-    #about-us-main{
+    #about-us-main, #offers, #latest-blog-main, 
+    #testimonial-container, #input-icon-container{
         flex-direction: column;
         padding: 50px 40px;
     }
@@ -241,15 +509,36 @@ nav div{
         max-width: 90%;
         margin-right: 10px;
     }
+    #offers-left img, #offers-right img{
+        height: 235px;
+        width: 90vw;
+    }
+    #offers-card-1 h2{
+        font-size: 2rem;
+    }
+    #footer-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #input input{
+        width: 70vw;
+    }
+    footer{
+        padding: 50px 30px ;
+    }
+    #input-icon-container{
+        gap: 30px;
+    }
+    #menu{
+        text-align: center;
+    }
 }
 @media screen and (min-width:577px) and (max-width:992px) {
     #header-content{
         width: 70%;
         padding-left:60px;
     }
-    #latest-main{
+    #latest-main, #footer-container, footer {
         padding: 50px 80px;
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
     #latest-container img{
@@ -267,5 +556,8 @@ nav div{
     #about-left img{
         max-width: 95%;
         margin-right: 10px;
+    }
+    #input input{
+        width: 45vw;
     }
 }
